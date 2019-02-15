@@ -415,7 +415,10 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-
+#header{
+  position: absolute;
+  position: center;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
