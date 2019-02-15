@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <style>
+    * {
+      font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", "Helvetica", sans-serif !important;
+      color: white;
+      text-decoration: none;
+    }
+
+    .header {
+      background: rgb(21, 15, 66);
+      height: auto;
+    }
+
+    .header h2 {
+      float: left;
+      margin-left: 10px;
+      vertical-align: middle;
+      position: relative;
+    }
+
+    #navbar-table {
+      border-collapse: separate;
+      border-spacing: 2px;
+      position: relative;
+      white-space: nowrap;
+      margin-left: auto;
+      text-align: right;
+    }
+
+    #navbar-table th{
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .sticky + main {
+      padding-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navHeader" class="header">
+    <h2>Environmental Council</h2>
+    <div style="overflow-x: auto;">
+      <table id="navbar-table">
+        <tbody>
+          <th><a href="index.html">Home</a></th>
+          <th><a href="goals.html">Goals</a></th>
+          <th><a href="learnMore.html">Learn More</a></th>
+          <th><a href="about.html">About</a></th>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
