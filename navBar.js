@@ -6,4 +6,4 @@
     element.innerHTML = req.responseText;
   }
 
-load("navBar.html", document.getElementById("runNavBar"));ar
+load("navBar.html", document.getElementById("runNavBar"));
