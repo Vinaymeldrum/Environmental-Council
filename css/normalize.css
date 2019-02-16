@@ -1,5 +1,17 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
+
+body{
+  background-color: rgb(110, 193, 120);
+}
+#header{
+  position: absolute;
+  left: 200px;
+  color: rgb(15, 48, 61);
+  font-weight: bold;
+  padding-color:
+}
+
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -415,10 +427,7 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-#header{
-  position: absolute;
-  position: center;
-}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
