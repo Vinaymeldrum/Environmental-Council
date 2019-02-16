@@ -1,2 +1,2 @@
 # Environmental Council
-https://vinaymeldrum.github.io/Environmental-Council/index.html
+https://vinaymeldrum.github.io/Environmental-Council
