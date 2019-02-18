@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body, html {
+    height: 100%;
+}
+
+body {
+  background-color: rgb(110, 193, 120);
+}
+
+* {
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+/* home.html hero */
+/* or whatever appearance idk we can figure it out later when we actually have the pictures */
+.carousel {
+  max-height: 768px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  transform: scale(1.03) translateZ(0); /* Forces hardware acceleration for image processing */
+  filter: brightness(40%) blur(2.5px);
+}
+
+#hero-text {
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Navigation bar */
+.header {
+  background: #0F303D;
+  height: auto;
+}
+
+#navbar-table a {
+  color: #45A89B;
+}
+
+.header h2 {
+  float: left;
+  margin-left: 10px;
+  vertical-align: middle;
+  position: relative;
+  margin-top: 20px;
+  white-space: nowrap;
+  font-size: 2em;
+}
+
+#navbar-table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  position: relative;
+  white-space: nowrap;
+  margin-left: auto;
+  text-align: right;
+}
+
+#navbar-table th {
+  padding: 16px;
+  padding-top: 22px;
+  font-size: 1.3rem;
+}
