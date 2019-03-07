@@ -14,14 +14,13 @@ body {
   text-decoration: none;
 }
 
-/* home.html hero */
-/* or whatever appearance idk we can figure it out later when we actually have the pictures */
-.carousel {
+/* Hero */
+.carousel, .hero {
   max-height: 768px;
   overflow: hidden;
 }
 
-.carousel-item img {
+.carousel-item, .hero-img {
   transform: scale(1.03) translateZ(0); /* Forces hardware acceleration for image processing */
   filter: brightness(40%) blur(2.5px);
 }
