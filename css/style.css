@@ -116,12 +116,6 @@ body {
 
   .desktopCalendar { display: none; }
   .mobileCalendar { display: block; }
-
-  .lightwidget-widget {
-    width: 50%;
-    max-width: 275px;
-  }
-
 }
 
 @media screen and (min-width: 670px) and (max-width: 940px) {
@@ -150,9 +144,4 @@ body {
   border: solid 1px #777;
   display: block;
   margin: auto;
-}
-
-.lightwidget-widget {
-  width: 400px;
-  height: 400px;
 }
