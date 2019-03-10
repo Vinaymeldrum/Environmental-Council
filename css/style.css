@@ -91,8 +91,8 @@ body {
     font-size: 1.5em;
   }
 
-  .header #short-title { display: inline; }
-  .header #full-title { display: none; }
+  .short-text { display: inline; }
+  .full-text { display: none; }
   .navBar #navbar-table { margin-right: 0px;}
   .navBar a { display: none; }
   .navBar #burgerMenu { display: inline; }
@@ -113,14 +113,46 @@ body {
     text-align: right;
     font-size: 1.2rem;
   }
+
+  .desktopCalendar { display: none; }
+  .mobileCalendar { display: block; }
+
+  .lightwidget-widget {
+    width: 50%;
+    max-width: 275px;
+  }
+
 }
 
 @media screen and (min-width: 670px) and (max-width: 940px) {
-  .header #short-title { display: inline; }
-  .header #full-title { display: none; }
+  .short-text { display: inline; }
+  .full-text { display: none; }
   #navLinks { overflow: hidden; }
+  .desktopCalendar { display: block; }
+  .mobileCalendar { display: none; }
 }
 
 @media screen and (min-width: 940px) {
+  .short-text { display: none; }
+  .full-text { display: inline; }
   #navLinks { overflow: hidden; }
+  .desktopCalendar { display: block; }
+  .mobileCalendar { display: none; }
+}
+
+/* Subtitle */
+.subtitle {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.desktopCalendar iframe, .mobileCalendar iframe {
+  border: solid 1px #777;
+  display: block;
+  margin: auto;
+}
+
+.lightwidget-widget {
+  width: 400px;
+  height: 400px;
 }

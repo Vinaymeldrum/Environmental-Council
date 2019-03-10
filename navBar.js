@@ -15,8 +15,10 @@ function loadBurgerMenu() {
   if (x.className === "navBar") {
     x.className += " mobile";
     document.getElementById("burgerMenu").innerHTML = "&#10005;";
+    document.getElementById("burgerMenu").setAttribute("aria-label", "Close menu");
   } else {
     x.className = "navBar";
     document.getElementById("burgerMenu").innerHTML = "&#9776";
+    document.getElementById("burgerMenu").setAttribute("aria-label", "Open menu");
   }
 }
