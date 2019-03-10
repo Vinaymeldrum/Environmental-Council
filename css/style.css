@@ -44,27 +44,83 @@ body {
   color: #45A89B;
 }
 
-.header h2 {
+.header img {
   float: left;
   margin-left: 10px;
   vertical-align: middle;
-  position: relative;
+  margin-top: 5px;
+}
+
+.header h2 {
+  float: left;
+  margin-left: 20px;
+  vertical-align: middle;
   margin-top: 20px;
   white-space: nowrap;
   font-size: 2em;
 }
+
+.header #short-title { display: none; }
+.header #burgerMenu { display: none; }
 
 #navbar-table {
   border-collapse: separate;
   border-spacing: 2px;
   position: relative;
   white-space: nowrap;
+  float: right;
   margin-left: auto;
-  text-align: right;
+  margin-right: -32px; /* Offsets hidden hamburger menu icon */
 }
 
 #navbar-table th {
   padding: 16px;
   padding-top: 22px;
   font-size: 1.3rem;
+}
+
+#navLinks {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 670px) {
+  #hero-text { font-size: 1.5rem; }
+
+  .header h2 {
+    margin-top: 25px;
+    font-size: 1.5em;
+  }
+
+  .header #short-title { display: inline; }
+  .header #full-title { display: none; }
+  .navBar #navbar-table { margin-right: 0px;}
+  .navBar a { display: none; }
+  .navBar #burgerMenu { display: inline; }
+
+  .navBar.mobile #navbar-table {
+    float: right;
+    white-space: normal;
+  }
+
+  .navBar.mobile #navbar-table th {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+  }
+
+  .navBar.mobile a {
+    display: inline;
+    text-align: right;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 670px) and (max-width: 940px) {
+  .header #short-title { display: inline; }
+  .header #full-title { display: none; }
+  #navLinks { overflow: hidden; }
+}
+
+@media screen and (min-width: 940px) {
+  #navLinks { overflow: hidden; }
 }
