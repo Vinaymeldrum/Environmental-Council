@@ -6,7 +6,7 @@
   <!-- Metadata -->
   <meta charset="utf-8">
   <meta name="author" content="Michael Lam & Vinay Meldrum">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>AYJ Environmental Council</title>
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"> <!-- iOS Safari and Firefox -->
@@ -18,11 +18,11 @@
   <meta name="theme-color" content="#ffffff">
   <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="runNavBar"></div>
+  <div id="loadHeader"></div>
   <div class="container-fluid">
     <div class="row">
       <div class="col p-0">
@@ -34,7 +34,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/groupPhoto.png" class="d-block w-100" alt="...">
+              <img src="images/groupPhoto.png" class="d-block w-100" alt="A group photo of the Environmental Council">
             </div>
             <div class="carousel-item"> <!-- We should probably use pictures of us doing stuff here instead of random nature pictures -->
               <img src="https://vastphotos.com/files/uploads/photos/10306/high-resolution-mountains-and-lakes-m.jpg" class="d-block w-100" alt="...">
@@ -52,45 +52,50 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <span class="full-text"><h1 id="hero-text">A.Y. Jackson Environmental Council</h1></span>
-        <span class="short-text"><h1 id="hero-text">AYJ Environmental Council</h1></span>
+        <h1 id="hero-text" class="full-text">A.Y. Jackson Environmental Council</h1>
+        <h1 id="hero-text" class="short-text">AYJ Environmental Council</h1>
       </div>
-    </div>
-    <div class="row">
-      <span class="col-12 text-center spanning"><h1 class="subtitle">Upcoming Events</h1></span>
-      <div class="col">
-        <h2 class="text-center">Instagram<h2>
-        <iframe src="https://snapwidget.com/embed/670598" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border: none; overflow: hidden; width: 50%; min-width: 275px; max-width: 400px; display: block; margin: auto;"></iframe>
-      </div>
-      <div class="col">
-        <h2 class="text-center">Google Calendar<h2>
-          <!-- https://feed.mikle.com/gcal/ -->
-        <div class="desktopCalendar">
-          <iframe src="https://calendar.google.com/calendar/embed?title=Test%20Calendar&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ocdsb.ca_scpo1vqp3ain154utgeto981mc%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FToronto" width="533" height="400"></iframe>
-        </div>
-        <div class="mobileCalendar">
-          <iframe src="https://calendar.google.com/calendar/embed?title=Test%20Calendar%20Mobile&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ocdsb.ca_scpo1vqp3ain154utgeto981mc%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FToronto" width="275" height="367" style="max-height: 367px;"></iframe>
-        </div>
-      </div>
-    </div>
-    <div class="row" style="height: 15px; background: #6BBA76;"></div> <!-- Section separator -->
-    <div class="row">
-      <span class="col-12 text-center spanning"><h1 class="subtitle">About the Environmental Council</h1></span>
-      <div class="col p-0">
-        <div class="px-5">
-
-          <h3>What are we about?</h3>
-          <p>We are going to be the change in AY. Our goal is to make AYJ as eco-friendly as possible. And to do so, we need YOU!
-            By joining this group YOU will have the opportunity to make your ideas heard an implemented into our school.
-             YOU will have the opportunity to change our school for the better. You will help have fundraisers to save money for non-profits organizations. And just, so much more.</p>
-
-        </div>
-      </div>
-      <h4 class="col-12 text-center spanning"><a href="aboutUs.html" aria-label="Learn more about us" style="color: #0F303D;">Learn more ></a></h4>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <h1 class="col-12 text-center spanning title">Upcoming Events</h1>
+      <div class="col-md">
+        <h2 class="text-center" style="margin-top: 5px">Instagram</h2>
+        <iframe src="https://snapwidget.com/embed/670598" class="snapwidget-widget" width="100%" style="border: none; border-radius: 5px; overflow: hidden; min-width: 220px; max-width: 400px; display: block; margin: auto;"></iframe>
+      </div>
+      <div class="col-md">
+        <h2 class="text-center" style="margin-top: 5px">Calendar</h2>
+        <iframe src="https://feed.mikle.com/widget/v2/105157/" height="400px" width="100%" style="min-width: 220px; max-width: 400px; display: block; margin: auto;" class="calendar" scrolling="no" frameborder="0"></iframe>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <h1 class="col-12 text-center spanning title">About the Environmental Council</h1>
+      <div class="col p-0">
+        <div class="px-5">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel enim lobortis, efficitur lacus et, elementum est. Sed leo libero, bibendum ut nisl non, condimentum tempus ligula. Etiam vel nisi ante. Duis iaculis turpis risus, eget condimentum risus scelerisque eget. Ut aliquet, velit id elementum ornare, nibh tortor ultrices nisl, ac consequat ipsum lorem id ante. Morbi est ipsum, dictum quis interdum sit amet, tempus sit amet velit. Praesent sit amet sapien rutrum, feugiat ipsum sit amet, pulvinar felis. Vestibulum felis erat, blandit et viverra eget, vulputate vel mauris.</p>
+        </div>
+        <h4 class="col-12 text-center spanning"><a href="aboutUs.html" aria-label="Learn more about us" style="color: #2E7EC8;">Learn more ></a></h4>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <h1 class="col-12 text-center spanning title">Join Us</h1>
+      <div class="col p-0">
+        <div class="px-5">
+          <p>Our goal is to make A.Y. Jackson as environmentally friendly as possible, and to do so, we need your help! By joining the Environmental Council, you will have the opportunity to make your ideas heard and implemented to change our school for the better!</p>
+          <p>Not only will you help create impact within the community, but you will also be able to obtain volunteer hours, as well as be able to include this club on any resume or application!</p>
+          <p>Come join us every Friday at lunch! We meet in room 131, located within the science hall. Alternatively, email us for more details.</p>
+        </div>
+      </div>
+      <h4 class="col-12 text-center spanning"><a href="mailto:szayn3@ocdsb.ca?Subject=Environmental%20Council%20inquiry" target="_blank" style="color: #2E7EC8;">Send us an email ></a></h4>
+    </div>
+  </div>
+  <br>
+  <div id="loadFooter"></div>
 
-  <script src="navBar.js"></script>
+  <script src="loadFiles.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://snapwidget.com/js/snapwidget.js"></script>

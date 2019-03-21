@@ -14,6 +14,12 @@ body {
   text-decoration: none;
 }
 
+/* General media queries */
+.title {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
 /* Hero */
 .carousel, .hero {
   max-height: 768px;
@@ -21,7 +27,7 @@ body {
 }
 
 .carousel-item, .hero-img {
-  transform: scale(1.03) translateZ(0); /* Forces hardware acceleration for image processing */
+  transform: scale(1.05) translateZ(0); /* Forces hardware acceleration for image processing */
   filter: brightness(40%) blur(2.5px);
 }
 
@@ -34,27 +40,25 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* Navigation bar */
-.header {
+/* Navigation bar and footer */
+.header, #footer {
   background: #0F303D;
   height: auto;
 }
 
-#navbar-table a {
+#navBarTable a {
   color: #45A89B;
 }
 
 .header img {
   float: left;
   margin-left: 10px;
-  vertical-align: middle;
   margin-top: 5px;
 }
 
 .header h2 {
   float: left;
   margin-left: 20px;
-  vertical-align: middle;
   margin-top: 20px;
   white-space: nowrap;
   font-size: 2em;
@@ -63,17 +67,17 @@ body {
 .header #short-title { display: none; }
 .header #burgerMenu { display: none; }
 
-#navbar-table {
-  border-collapse: separate;
-  border-spacing: 2px;
-  position: relative;
-  white-space: nowrap;
+#navBarTable {
   float: right;
   margin-left: auto;
   margin-right: -32px; /* Offsets hidden hamburger menu icon */
+  position: relative;
+  border-collapse: separate;
+  border-spacing: 2px;
+  white-space: nowrap;
 }
 
-#navbar-table th {
+#navBarTable th {
   padding: 16px;
   padding-top: 22px;
   font-size: 1.3rem;
@@ -83,6 +87,8 @@ body {
   overflow-x: auto;
 }
 
+
+/* Responsive media queries */
 @media screen and (max-width: 670px) {
   #hero-text { font-size: 1.5rem; }
 
@@ -93,19 +99,19 @@ body {
 
   .short-text { display: inline; }
   .full-text { display: none; }
-  .navBar #navbar-table { margin-right: 0px;}
+  .navBar #navBarTable { margin-right: 0px;}
   .navBar a { display: none; }
   .navBar #burgerMenu { display: inline; }
 
-  .navBar.mobile #navbar-table {
+  .navBar.mobile #navBarTable {
     float: right;
     white-space: normal;
   }
 
-  .navBar.mobile #navbar-table th {
+  .navBar.mobile #navBarTable th {
+    padding-bottom: 8px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 8px;
   }
 
   .navBar.mobile a {
@@ -113,35 +119,28 @@ body {
     text-align: right;
     font-size: 1.2rem;
   }
-
-  .desktopCalendar { display: none; }
-  .mobileCalendar { display: block; }
 }
 
 @media screen and (min-width: 670px) and (max-width: 940px) {
   .short-text { display: inline; }
   .full-text { display: none; }
   #navLinks { overflow: hidden; }
-  .desktopCalendar { display: block; }
-  .mobileCalendar { display: none; }
 }
 
 @media screen and (min-width: 940px) {
   .short-text { display: none; }
   .full-text { display: inline; }
   #navLinks { overflow: hidden; }
-  .desktopCalendar { display: block; }
-  .mobileCalendar { display: none; }
 }
 
-/* Subtitle */
-.subtitle {
-  font-weight: bold;
-  margin-top: 15px;
-}
+/* Support for devices with notches */
+@supports(padding: max(0px)) {
+  #header img { margin-left: max(10px, env(safe-area-inset-left)); }
+  #navBarTable { margin-right: 0px; }
+  .container, .container-fluid { padding-bottom: env(safe-area-inset-bottom); }
 
-.desktopCalendar iframe, .mobileCalendar iframe {
-  border: solid 1px #777;
-  display: block;
-  margin: auto;
+  .col {
+    padding-left: max(40px, env(safe-area-inset-left));
+    padding-right: max(40px, env(safe-area-inset-right));
+  }
 }
