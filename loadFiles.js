@@ -22,3 +22,10 @@ function loadBurgerMenu() {
     document.getElementById("burgerMenu").setAttribute("aria-label", "Open menu");
   }
 }
+
+var currentLink = window.location.href;
+console.log(currentLink);
+ if (currentLink.includes("goals.html")) {
+   document.getElementById("goalsLink").style.color = "white";
+   console.log("hi");
+ }
