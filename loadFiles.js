@@ -24,8 +24,12 @@ function loadBurgerMenu() {
 }
 
 var currentLink = window.location.href;
-console.log(currentLink);
  if (currentLink.includes("goals.html")) {
    document.getElementById("goalsLink").style.color = "white";
-   console.log("hi");
+ }
+ if (currentLink.includes("learnMore.html")) {
+   document.getElementById("learnMoreLink").style.color = "white";
+ }
+ if (currentLink.includes("aboutUs.html")) {
+   document.getElementById("aboutUsLink").style.color = "white";
  }
