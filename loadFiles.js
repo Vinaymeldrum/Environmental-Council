@@ -26,10 +26,8 @@ function loadBurgerMenu() {
 var currentLink = window.location.href;
  if (currentLink.includes("goals.html")) {
    document.getElementById("goalsLink").style.color = "white";
- }
- if (currentLink.includes("learnMore.html")) {
+ } else if (currentLink.includes("learnMore.html")) {
    document.getElementById("learnMoreLink").style.color = "white";
- }
- if (currentLink.includes("aboutUs.html")) {
+ } else if (currentLink.includes("aboutUs.html")) {
    document.getElementById("aboutUsLink").style.color = "white";
  }
