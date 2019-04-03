@@ -15,19 +15,19 @@ function loadBurgerMenu() {
   if (x.className === "navBar") {
     x.className += " mobile";
     document.getElementById("burgerMenu").innerHTML = "&#10005;";
-    document.getElementById("burgerMenu").setAttribute("aria-label", "Close menu");
+    document.getElementById("burgerMenu").setAttribute("aria-labelledby", "Close menu");
   } else {
     x.className = "navBar";
     document.getElementById("burgerMenu").innerHTML = "&#9776";
-    document.getElementById("burgerMenu").setAttribute("aria-label", "Open menu");
+    document.getElementById("burgerMenu").setAttribute("aria-labelledby", "Open menu");
   }
 }
 
 var currentLink = window.location.href;
- if (currentLink.includes("goals.html")) {
-   document.getElementById("goalsLink").style.color = "white";
- } else if (currentLink.includes("learnMore.html")) {
-   document.getElementById("learnMoreLink").style.color = "white";
- } else if (currentLink.includes("aboutUs.html")) {
-   document.getElementById("aboutUsLink").style.color = "white";
- }
+if (currentLink.includes("goals.html")) {
+  document.getElementById("goalsLink").style.color = "white";
+} else if (currentLink.includes("learnMore.html")) {
+  document.getElementById("learnMoreLink").style.color = "white";
+} else if (currentLink.includes("aboutUs.html")) {
+  document.getElementById("aboutUsLink").style.color = "white";
+}
