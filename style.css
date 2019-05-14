@@ -36,7 +36,7 @@ a:hover {
 
 .carousel-item, .hero-img {
   transform: scale(1.05) translateZ(0); /* Forces hardware acceleration for image processing */
-  filter: brightness(40%) blur(2.5px);
+  filter: brightness(40%) blur(3.5px);
 }
 
 #hero-text {
