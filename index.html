@@ -34,13 +34,19 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/yearbookLowRes.jpg" class="d-block w-100" alt="A group photo of the Environmental Council">
+              <picture>
+               <source media="(min-width: 1440px)" srcset="images/yearbookDesktop.jpg">
+               <img src="images/yearbook.jpg" class="d-block w-100" alt="A group photo of the Environmental Council">
+              </picture>
             </div>
-            <div class="carousel-item"> <!-- We should probably use pictures of us doing stuff here instead of random nature pictures -->
+            <div class="carousel-item">
               <img src="images/wasteAudit.jpg" class="d-block w-100" alt="The Environmental Council separating garbage for the Waste Audit">
             </div>
             <div class="carousel-item">
-              <img src="images/glaciers.jpg" class="d-block w-100" alt="...">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/bagGrabDesktop.jpg">
+                <img src="images/bagGrab.jpg" class="d-block w-100" alt="The Environmental Council with plastic bags collected from the Bag Grab Challenge">
+              </picture>
             </div>
           </div>
           <a class="carousel-control-prev" href="#indexCarousel" role="button" data-slide="prev">
